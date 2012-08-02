@@ -51,6 +51,8 @@ NSTimer *timer;
     // When view did load, Map message, create table and load message board
     [super viewDidLoad];
     
+    NSLog(@"Logging something from UserGrid Message Board ..message board loaded");
+    
     self.scrollView.frame = CGRectMake(0, 0, 320, 460);
     
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 45, 320, 480-64) style:UITableViewStylePlain];

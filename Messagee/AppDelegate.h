@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "UGClient.h"
+#import "InstaOpsAppMonitoring.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property InstaOpsAppMonitoring* iopsAppMonitoring;
 
 @end
