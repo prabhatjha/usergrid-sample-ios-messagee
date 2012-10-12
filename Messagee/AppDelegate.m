@@ -8,31 +8,27 @@
 
 #import "AppDelegate.h"
 #import <RestKit/RestKit.h>
-//instaops headers
-#import "InstaOpsConstants.h"
-#import "InstaOpsAppMonitoring.h"
 
 @implementation AppDelegate
 
-@synthesize iopsAppMonitoring;
+//@synthesize iopsAppMonitoring;
 
 @synthesize window = _window;
+@synthesize iopsAppMonitor;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    iopsAppMonitor = [[InstaOpsAppMonitor alloc] initWithAppId:@"4"
+                                                     accessKey:@"AKIAJRBBCNT6RLTFRV7A"
+                                                     secretKey:@"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"
+                                                   environment:@"prod" ];
     
-    NSString *applicationName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"];
-    iopsAppMonitoring = [[InstaOpsAppMonitoring alloc] initWithAppId: APPID
-                                                           accessKey: ACCESS_KEY_ID
-                                                           secretKey: SECRET_KEY
-                                                       awsEnironment: APP_QUEUE_NAME
-                                                       awsBucketName: S3_CONFIG_BUCKET_NAME
-                                                         forFacility: applicationName];
-    // Usergrid default server url
+       // Usergrid default server url
     [[UGClient sharedInstance] UGClientApiUrl:@"http://api.usergrid.com/Apigee/MessageeApp"];//Usergid Server
 
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigationBar"] forBarMetrics:UIBarMetricsDefault];
-    asl_log(NULL, NULL, ASL_LEVEL_ERR, " Logging something at error level from UserGrid Messagee app");
+    //asl_log(NULL, NULL, ASL_LEVEL_ERR, " Logging something at error level from UserGrid Messagee app");
     return YES;
 }
 							

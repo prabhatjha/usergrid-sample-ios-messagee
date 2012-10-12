@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		199D6F2C15C9A3AF00265A2A /* AWSiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199D6F2B15C9A3AF00265A2A /* AWSiOSSDK.framework */; };
-		19D4771E15C9EC2C00756353 /* libInstaOpsAppMonitoring.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D4771D15C9EC2C00756353 /* libInstaOpsAppMonitoring.a */; };
 		19DD5DB015C9E3FF00BD82FF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DD5DAF15C9E3FF00BD82FF /* CoreTelephony.framework */; };
+		63188FDE162878F000179F4F /* InstaOpsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63188FDD162878F000179F4F /* InstaOpsSDK.framework */; };
+		63188FE01628796600179F4F /* AWSiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63188FDF1628796600179F4F /* AWSiOSSDK.framework */; };
+		63188FE21628798D00179F4F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63188FE11628798D00179F4F /* CoreLocation.framework */; };
 		941740CD14F6F55F00F41B22 /* messageArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 941740CC14F6F55F00F41B22 /* messageArrow@2x.png */; };
 		94328D3914E563A100153B08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94328D3814E563A100153B08 /* UIKit.framework */; };
 		94328D3B14E563A200153B08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94328D3A14E563A100153B08 /* Foundation.framework */; };
@@ -100,13 +101,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		199D6F2715C9A16200265A2A /* CompositeApplicationConfigurationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompositeApplicationConfigurationModel.h; path = "../../Downloads/InstaOps-iOS-SDK/CompositeApplicationConfigurationModel.h"; sourceTree = "<group>"; };
-		199D6F2815C9A16200265A2A /* DefaultAppConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DefaultAppConfigModel.h; path = "../../Downloads/InstaOps-iOS-SDK/DefaultAppConfigModel.h"; sourceTree = "<group>"; };
-		199D6F2915C9A16200265A2A /* InstaOpsAppMonitoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstaOpsAppMonitoring.h; path = "../../Downloads/InstaOps-iOS-SDK/InstaOpsAppMonitoring.h"; sourceTree = "<group>"; };
-		199D6F2A15C9A1C100265A2A /* InstaOpsConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = InstaOpsConstants.h; path = "../../../Downloads/InstaOps-iOS-SDK/InstaOpsConstants.h"; sourceTree = "<group>"; };
-		199D6F2B15C9A3AF00265A2A /* AWSiOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSiOSSDK.framework; path = "../../Downloads/aws-ios-sdk-1.3.2/AWSiOSSDK.framework"; sourceTree = "<group>"; };
-		19D4771D15C9EC2C00756353 /* libInstaOpsAppMonitoring.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libInstaOpsAppMonitoring.a; path = "../../Library/Developer/Xcode/DerivedData/InstaOpsAppMonitoring-gchrzcwjuevhcoctdwsfrzzvdkfx/Build/Products/Debug-iphoneos/libInstaOpsAppMonitoring.a"; sourceTree = "<group>"; };
 		19DD5DAF15C9E3FF00BD82FF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		63188FDD162878F000179F4F /* InstaOpsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InstaOpsSDK.framework; path = "../../release-stuff/ApigeeMobileAnalytics_iOS_1.3.0/InstaOpsSDK.framework"; sourceTree = "<group>"; };
+		63188FDF1628796600179F4F /* AWSiOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSiOSSDK.framework; path = "../../Downloads/InstaOpsHelloWorld/Vendor/aws-ios-sdk-1.4.0/AWSiOSSDK.framework"; sourceTree = "<group>"; };
+		63188FE11628798D00179F4F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		941740CC14F6F55F00F41B22 /* messageArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messageArrow@2x.png"; sourceTree = "<group>"; };
 		94328D3414E563A100153B08 /* Messagee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messagee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94328D3814E563A100153B08 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -177,6 +175,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63188FE21628798D00179F4F /* CoreLocation.framework in Frameworks */,
+				63188FDE162878F000179F4F /* InstaOpsSDK.framework in Frameworks */,
 				19DD5DB015C9E3FF00BD82FF /* CoreTelephony.framework in Frameworks */,
 				94F5F03A14E565E600E1ED55 /* CFNetwork.framework in Frameworks */,
 				94F5F03B14E565E600E1ED55 /* CoreData.framework in Frameworks */,
@@ -188,29 +188,16 @@
 				94328D3914E563A100153B08 /* UIKit.framework in Frameworks */,
 				94328D3B14E563A200153B08 /* Foundation.framework in Frameworks */,
 				94328D3D14E563A200153B08 /* CoreGraphics.framework in Frameworks */,
-				199D6F2C15C9A3AF00265A2A /* AWSiOSSDK.framework in Frameworks */,
-				19D4771E15C9EC2C00756353 /* libInstaOpsAppMonitoring.a in Frameworks */,
+				63188FE01628796600179F4F /* AWSiOSSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		199D6F2615C9A10000265A2A /* InstaOps-Headers */ = {
-			isa = PBXGroup;
-			children = (
-				199D6F2715C9A16200265A2A /* CompositeApplicationConfigurationModel.h */,
-				199D6F2815C9A16200265A2A /* DefaultAppConfigModel.h */,
-				199D6F2915C9A16200265A2A /* InstaOpsAppMonitoring.h */,
-			);
-			name = "InstaOps-Headers";
-			sourceTree = "<group>";
-		};
 		94328D2914E563A100153B08 = {
 			isa = PBXGroup;
 			children = (
-				19DD5DAF15C9E3FF00BD82FF /* CoreTelephony.framework */,
-				199D6F2615C9A10000265A2A /* InstaOps-Headers */,
 				94F5F01E14E5650000E1ED55 /* RestKit.xcodeproj */,
 				94328D3E14E563A200153B08 /* Messagee */,
 				94328D3714E563A100153B08 /* Frameworks */,
@@ -229,8 +216,10 @@
 		94328D3714E563A100153B08 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				19D4771D15C9EC2C00756353 /* libInstaOpsAppMonitoring.a */,
-				199D6F2B15C9A3AF00265A2A /* AWSiOSSDK.framework */,
+				63188FE11628798D00179F4F /* CoreLocation.framework */,
+				63188FDF1628796600179F4F /* AWSiOSSDK.framework */,
+				19DD5DAF15C9E3FF00BD82FF /* CoreTelephony.framework */,
+				63188FDD162878F000179F4F /* InstaOpsSDK.framework */,
 				94F5F03414E565E600E1ED55 /* CFNetwork.framework */,
 				94F5F03514E565E600E1ED55 /* CoreData.framework */,
 				94F5F03614E565E600E1ED55 /* libxml2.dylib */,
@@ -247,7 +236,6 @@
 		94328D3E14E563A200153B08 /* Messagee */ = {
 			isa = PBXGroup;
 			children = (
-				199D6F2A15C9A1C100265A2A /* InstaOpsConstants.h */,
 				94328D4714E563A200153B08 /* AppDelegate.h */,
 				94328D4814E563A200153B08 /* AppDelegate.m */,
 				94328D4A14E563A200153B08 /* MainStoryboard.storyboard */,
@@ -560,6 +548,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Downloads/aws-ios-sdk-1.3.2\"",
+					"\"$(SRCROOT)/../../release-stuff/ApigeeMobileAnalytics_iOS_1.3.0\"",
+					"\"$(SRCROOT)/../../Downloads/InstaOpsHelloWorld/Vendor/aws-ios-sdk-1.4.0\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Messagee/Messagee-Prefix.pch";
@@ -587,6 +577,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Downloads/aws-ios-sdk-1.3.2\"",
+					"\"$(SRCROOT)/../../release-stuff/ApigeeMobileAnalytics_iOS_1.3.0\"",
+					"\"$(SRCROOT)/../../Downloads/InstaOpsHelloWorld/Vendor/aws-ios-sdk-1.4.0\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Messagee/Messagee-Prefix.pch";
